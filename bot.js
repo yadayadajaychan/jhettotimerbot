@@ -9,7 +9,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
     if (message.content === '${prefix}timer') {
-       message.reply('ok');
+       message.channel.send('ok.');
     }
 });
 
