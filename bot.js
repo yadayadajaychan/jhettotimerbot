@@ -8,8 +8,8 @@ client.once('ready', () => {
 
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-       message.reply('punggg');
+    if (message.content === '${prefix}timer') {
+       message.reply('ok');
     }
 });
 
