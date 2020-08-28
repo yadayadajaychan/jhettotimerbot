@@ -8,9 +8,19 @@ client.once('ready', () => {
 
 
 client.on('message', message => {
-    if (message.content === `${prefix}timer`) {
-       message.channel.send('ok.');
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    const args = message.content.slice(prefix.length).trim().split(' ');
+    const command = args.shift().toLowerCase();
+    
+    if (command === 'ping') {
+        message.channel.send('Pong');
+    } else if (command === 'timer') {
+        message.channel.send('nigger');
     }
+    
+    
+    
+    
 });
 
 client.login(process.env.BOT_TOKEN);
