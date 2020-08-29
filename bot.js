@@ -22,7 +22,7 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
     
     if (command === 'ping') {
-        message.reply('Pong');
+        client.commands.get('ping').execute(message, args);
     } else if (command === 'timer') {
         message.channel.send('nigger');
     }
