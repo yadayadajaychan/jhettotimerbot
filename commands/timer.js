@@ -20,10 +20,10 @@ module.exports = {
 		
 		// checks if arg[0] is a number
 		if (isNaN(arg[0])) {
-			null
-		} else {
 			message.channel.send("ching chong no good at math");
 			return
+		} else {
+			null
 		}
 		message.channel.send(`${args[0]}`);
 		message.channel.send(unit);
