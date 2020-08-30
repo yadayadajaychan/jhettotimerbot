@@ -18,7 +18,10 @@ module.exports = {
 			return;
 		}
 		
-		
+		if (Number.isInteger(args[0]) == False) {
+			message.channel.send("ching chong can't do math");
+			return;
+		}
 		message.channel.send(`${args[0]}`);
 		message.channel.send(unit);
 	},
