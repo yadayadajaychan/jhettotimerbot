@@ -23,7 +23,7 @@ module.exports = {
 			message.channel.send("ching chong no good at math");
 			return
 		} else {
-			null
+			null;
 		}
 		message.channel.send(`${args[0]}`);
 		message.channel.send(unit);
