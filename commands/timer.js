@@ -18,11 +18,7 @@ module.exports = {
 			return;
 		}
 		
-		// checks if arg[0] is a number
-		if (isNaN(arg[0])) {
-			message.channel.send("ching chong no good at math");
-			return;
-		}
+		
 		message.channel.send(`${args[0]}`);
 		message.channel.send(unit);
 	},
