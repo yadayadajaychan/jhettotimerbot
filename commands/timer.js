@@ -15,13 +15,13 @@ module.exports = {
 			unit = "year(s)";
 		} else {
 			message.channel.send("You made an error nigger");
-			return
+			return;
 		}
 		
 		// checks if arg[0] is a number
 		if (isNaN(arg[0])) {
 			message.channel.send("ching chong no good at math");
-			return
+			return;
 		}
 		message.channel.send(`${args[0]}`);
 		message.channel.send(unit);
