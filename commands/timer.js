@@ -18,7 +18,7 @@ module.exports = {
 			return;
 		}
 		
-		test = args[0]
+		var test = args[0]
 		if (Number.isInteger(test) === False) {
 			message.channel.send("ching chong can't do math");
 			return;
