@@ -28,5 +28,6 @@ module.exports = {
 		
 		message.channel.send(number);
 		message.channel.send(unit);
+		message.channel.send(args[2]);
 	},
 };
