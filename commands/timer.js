@@ -19,11 +19,9 @@ module.exports = {
 		}
 		
 		var test = parseInt(args[0]);
-		if (Number.isInteger(test) === False) {
-			message.channel.send("ching chong can't do math");
-			return;
-		}
+		
 		message.channel.send(`${args[0]}`);
+		message.channel.send(test);
 		message.channel.send(unit);
 	},
 };
