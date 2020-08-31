@@ -25,9 +25,9 @@ module.exports = {
 			return;
 		}
 		
-		
+		var info = args[2];
 		message.channel.send(number);
 		message.channel.send(unit);
-		message.channel.send(args[2]);
+		message.channel.send(info);
 	},
 };
