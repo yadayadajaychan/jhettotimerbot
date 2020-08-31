@@ -40,14 +40,7 @@ module.exports = {
 		} else {
 			var description = "False";
 		}
-		if (description == "True") {
-			int i = 2;
-			var info = args[2];
-			while (i < args.length) {
-				var info = info + args[3];
-				i++;
-			}
-		}
+
 		
 		
 		//calculates time for reminder
