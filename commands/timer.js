@@ -14,7 +14,7 @@ module.exports = {
 		} else if (args[1] === 'y') {
 			unit = "year(s)";
 		} else {
-			message.channel.send("You made an error nigger");
+			message.channel.send("You made a unit error nigger");
 			return;
 		}
 		
