@@ -2,6 +2,12 @@ module.exports = {
 	name: 'timer',
 	description: 'timer',
 	execute(message, args) {
+		//checks if arg[0] is NaN
+		var number = parseFloat(args[0]);
+		if (isNaN(number)) {
+			message.channel.send("ching chong can't do math");
+			return;
+		}		
 		// finds the unit of time
 		if (args[1] === 's') {
 			unit = "second(s)";
@@ -18,12 +24,6 @@ module.exports = {
 			return;
 		}
 		
-		//checks if arg[0] is NaN
-		var number = parseFloat(args[0]);
-		if (isNaN(number)) {
-			message.channel.send("ching chong can't do math");
-			return;
-		}
 		//timer description
 		var info = args[2];
 		
