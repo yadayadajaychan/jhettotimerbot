@@ -34,11 +34,12 @@ module.exports = {
 		
 		//calculates time for reminder
 		var current_time = Math.floor(Date.now() / 1000);
+		var target_time = current_time + timer;
 		
+		message.chaneel.send(current_time);
+		message.channel.send(target_time);
 		
-		message.channel.send(timer);
-		
-		
+		//sends confirmation
 		message.channel.send("You have a timer set for " + number + " " + unit);
 		message.channel.send(info);
 	},
