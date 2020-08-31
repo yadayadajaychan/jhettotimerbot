@@ -19,7 +19,10 @@ module.exports = {
 		}
 		
 		var number = parseFloat(args[0]);
-		
+		if (isNaN(number)) {
+			message.channel.send("ching chong can't do math");
+			return;
+		}
 		
 		
 		message.channel.send(number);
