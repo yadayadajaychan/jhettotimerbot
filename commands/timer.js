@@ -37,8 +37,10 @@ module.exports = {
 		//timer info fukc it ill go back to this later
 		if (args.length > 2) {
 			var description = "True";
+			var info = args[2];
 		} else {
 			var description = "False";
+			var info = null;
 		}
 		
 		
