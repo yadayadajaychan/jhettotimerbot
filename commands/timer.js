@@ -39,7 +39,7 @@ module.exports = {
 			var description = "True";
 		} else {
 			var description = "False";
-		}
+		};
 		if (description == "True") {
 			int i = 2;
 			var info = `${args[2]}`;
@@ -49,7 +49,7 @@ module.exports = {
 			}
 		} else {
 			var info = null;
-		}
+		};
 		
 		
 		//calculates time for reminder
