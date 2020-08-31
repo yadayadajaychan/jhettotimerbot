@@ -47,6 +47,8 @@ module.exports = {
 				var info = info + args[3];
 				i++;
 			}
+		} else {
+			var info = null;
 		}
 		
 		
