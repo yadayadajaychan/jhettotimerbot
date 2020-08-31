@@ -55,7 +55,6 @@ module.exports = {
 		
 		//sends confirmation
 		message.channel.send(author + ", " + "you have a timer set for " + number + " " + unit);
-		message.channel.send(description);
 		message.channel.send(number_of_words);
 	},
 };
