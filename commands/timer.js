@@ -42,7 +42,11 @@ module.exports = {
 		}
 		var number_of_words = args.length - 2;
 		if (description == "True") {
-			var info = args[2];
+			int x = 0;
+			var info = '';
+			while (x < number_of_words) {
+				var info = info + " " + args[2];
+				var x = x + 1;
 		}
 		
 		//calculates time for reminder
@@ -55,6 +59,6 @@ module.exports = {
 		
 		//sends confirmation
 		message.channel.send(author + ", " + "you have a timer set for " + number + " " + unit);
-		message.channel.send(number_of_words);
+		message.channel.send(info);
 	},
 };
