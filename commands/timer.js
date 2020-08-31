@@ -29,7 +29,7 @@ module.exports = {
 			return;
 		}
 		
-		//timer description
+		//timer info
 		var info = args[2];
 		
 		//calculates time for reminder
@@ -37,8 +37,8 @@ module.exports = {
 		
 		
 		
-		
 		message.channel.send(number);
+		message.channel.send(args[0]);
 		message.channel.send(unit);
 		message.channel.send(info);
 	},
