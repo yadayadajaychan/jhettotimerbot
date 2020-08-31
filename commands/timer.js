@@ -24,8 +24,15 @@ module.exports = {
 			message.channel.send("ching chong can't do math");
 			return;
 		}
-		
+		//timer description
 		var info = args[2];
+		
+		//calculates time for reminder
+		var current_time = Math.floor(Date.now() / 1000);
+		
+		
+		
+		
 		message.channel.send(number);
 		message.channel.send(unit);
 		message.channel.send(info);
