@@ -2,6 +2,11 @@ module.exports = {
 	name: 'timer',
 	description: 'timer',
 	execute(message, args) {
+		//checks if there are no arguments
+		if(args.length == 0){
+			message.channel.send("enter a number and a unit");
+			return;
+		}
 		//checks if arg[0] is NaN
 		var number = parseInt(args[0]);
 		if (isNaN(number)) {
