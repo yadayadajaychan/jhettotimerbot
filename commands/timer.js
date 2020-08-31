@@ -34,19 +34,12 @@ module.exports = {
 			return;
 		}
 		
-		//timer info
+		//timer info fukc it ill go back to this later
 		if (args.length > 2) {
 			var description = "True";
 		} else {
 			var description = "False";
-		};
-		if (description == "True") {
-			int i = 2;
-			var info = `${args[2]}`;
-			
-		} else {
-			var info = null;
-		};
+		}
 		
 		
 		//calculates time for reminder
@@ -59,6 +52,7 @@ module.exports = {
 		
 		//sends confirmation
 		message.channel.send(author + ", " + "you have a timer set for " + number + " " + unit);
+		message.channel.send(description);
 		message.channel.send(info);
 	},
 };
