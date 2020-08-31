@@ -43,10 +43,7 @@ module.exports = {
 		if (description == "True") {
 			int i = 2;
 			var info = `${args[2]}`;
-			while (i < args.length) {
-				var info = info + args[3];
-				i++;
-			}
+			
 		} else {
 			var info = null;
 		};
