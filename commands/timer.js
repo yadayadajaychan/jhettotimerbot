@@ -18,10 +18,11 @@ module.exports = {
 			return;
 		}
 		
-		var test = parseInt(args[0]);
+		var number = parseFloat(args[0]);
 		
-		message.channel.send(`${args[0]}`);
-		message.channel.send(test);
+		
+		
+		message.channel.send(number);
 		message.channel.send(unit);
 	},
 };
