@@ -40,6 +40,7 @@ module.exports = {
 		} else {
 			var description = "False";
 		}
+		var number_of_words = args.length - 2;
 		if (description == "True") {
 			var info = args[2];
 		}
@@ -55,6 +56,6 @@ module.exports = {
 		//sends confirmation
 		message.channel.send(author + ", " + "you have a timer set for " + number + " " + unit);
 		message.channel.send(description);
-		message.channel.send(info);
+		message.channel.send(number_of_words);
 	},
 };
