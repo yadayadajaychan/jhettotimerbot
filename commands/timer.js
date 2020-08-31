@@ -41,13 +41,7 @@ module.exports = {
 			var description = "False";
 		}
 		var number_of_words = args.length - 2;
-		if (description == "True") {
-			int x = 0;
-			var info = '';
-			while (x < number_of_words) {
-				var info = info + " " + args[2];
-				var x = x + 1;
-		}
+		
 		
 		//calculates time for reminder
 		var current_time = Math.floor(Date.now() / 1000);
