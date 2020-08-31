@@ -45,7 +45,7 @@ module.exports = {
 			var info = args[2];
 			while (i < args.length) {
 				var info = info + args[3];
-				var i = i + 1;
+				i++;
 			}
 		}
 		
