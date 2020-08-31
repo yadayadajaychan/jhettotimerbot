@@ -36,7 +36,7 @@ module.exports = {
 		var current_time = Math.floor(Date.now() / 1000);
 		var target_time = current_time + timer;
 		
-		message.chaneel.send(current_time);
+		message.channel.send(current_time);
 		message.channel.send(target_time);
 		
 		//sends confirmation
