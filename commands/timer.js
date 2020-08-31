@@ -47,6 +47,7 @@ module.exports = {
 				var info = info + args[(i+1)];
 				var i = i + 1;
 			}
+		}
 		
 		
 		//calculates time for reminder
