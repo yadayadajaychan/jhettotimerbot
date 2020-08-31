@@ -38,10 +38,10 @@ module.exports = {
 		
 		//finds user
 		var author = `${message.author}`;
-		message.channel.send(author);
+		
 		
 		//sends confirmation
-		message.channel.send("You have a timer set for " + number + " " + unit);
+		message.channel.send(author + ", " + "you have a timer set for " + number + " " + unit);
 		message.channel.send(info);
 	},
 };
