@@ -36,11 +36,11 @@ module.exports = {
 		
 		//timer info
 		if (args.length > 2) {
-			var description = True;
+			var description = "True";
 		} else {
-			var description = False;
+			var description = "False";
 		}
-		if (description == True) {
+		if (description == "True") {
 			var info = args[2];
 		}
 		
