@@ -35,7 +35,14 @@ module.exports = {
 		}
 		
 		//timer info
-		var info = args[2];
+		if (args.length > 2) {
+			var description = True;
+		} else {
+			var description = False;
+		}
+		if (description == True) {
+			var info = args[2];
+		}
 		
 		//calculates time for reminder
 		var current_time = Math.floor(Date.now() / 1000);
