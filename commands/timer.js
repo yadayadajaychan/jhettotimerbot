@@ -40,7 +40,7 @@ module.exports = {
 			var info = args[2];
 		} else {
 			var description = "False";
-			var info = null;
+			var info = "";
 		}
 		
 		
