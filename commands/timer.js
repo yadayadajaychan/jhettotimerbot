@@ -37,8 +37,9 @@ module.exports = {
 		
 		
 		message.channel.send(timer);
-		message.channel.send(number);
-		message.channel.send(unit);
+		
+		
+		message.channel.send("You have a timer set for " + number + " " + unit);
 		message.channel.send(info);
 	},
 };
