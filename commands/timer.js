@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 module.exports = {
 	name: 'timer',
 	description: 'timer',
@@ -50,6 +52,19 @@ module.exports = {
 		
 		//finds user
 		var author = `${message.author}`;
+		
+		//creats timer file
+		try {
+      			File myObj = new File("timer_list.txt");
+  		    	if (myObj.createNewFile()) {
+        			message.channel.send("File created: " + myObj.getName());
+      			} else {
+        			message.channel.send("File already exists.");
+      			}
+    		} catch (IOException e) {
+      			message.channel.send("An error occurred.");
+     			e.printStackTrace();
+    		}
 		
 		
 		//sends confirmation
