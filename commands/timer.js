@@ -4,7 +4,7 @@ module.exports = {
 	execute(message, args) {
 		//checks if there are no arguments
 		if(args.length == 0){
-			message.channel.send("enter a number and a unit");
+			message.channel.send("Enter a number, a unit, and a description(optional).");
 			return;
 		}
 		//checks if arg[0] is NaN
