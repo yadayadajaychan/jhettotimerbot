@@ -37,7 +37,8 @@ module.exports = {
 		var target_time = current_time + timer;
 		
 		//finds user
-		message.channel.send(`${message.author}`);
+		var author = message.author;
+		message.channel.send(author);
 		
 		//sends confirmation
 		message.channel.send("You have a timer set for " + number + " " + unit);
