@@ -36,7 +36,6 @@ module.exports = {
 		var current_time = Math.floor(Date.now() / 1000);
 		
 		
-		
 		message.channel.send(number);
 		message.channel.send(args[0]);
 		message.channel.send(unit);
