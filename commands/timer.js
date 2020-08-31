@@ -53,7 +53,7 @@ module.exports = {
 		//finds user
 		var author = `${message.author}`;
 		
-		//creats timer file
+		//creats timer file fisajdoic fix this
 		try {
       			File myObj = new File("timer_list.txt");
   		    	if (myObj.createNewFile()) {
